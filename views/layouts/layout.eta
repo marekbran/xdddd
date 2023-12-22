@@ -9,6 +9,7 @@
   <h1>Image Page</h1>
   <!-- Replace "path/to/your/image.jpg" with the actual path to your image file -->
   <img src="file:///C:/Users/edek7/OneDrive/Pulpit/z/source.jpg" alt="Description of the image">
+  <img src="https://www.meme-arsenal.com/memes/6a57a1ae59a0eda156b29efa9e2bca77.jpg" alt="zzz">
 
 
 
