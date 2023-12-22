@@ -1,16 +1,17 @@
-import { Application, send } from "https://deno.land/x/abc/mod.ts";
+import { Application } from "https://deno.land/x/abc/mod.ts";
 import { configure, renderFile } from "./deps.js";
 import { join } from "https://deno.land/std/path/mod.ts";
+import { sendFile } from "https://deno.land/std/http/file_server.ts";
 
 configure({
   views: `${Deno.cwd()}/views/`,
 });
 
 const app = new Application();
-const staticBasePath = join(Deno.cwd(), "./source.jpg");
+const staticBasePath = join(Deno.cwd(), "./path/to/static/files");
 
 app.use(async (ctx) => {
-  await send(ctx, ctx.request.url.pathname, {
+  await sendFile(ctx, ctx.request.url.pathname, {
     root: staticBasePath,
   });
 });
