@@ -8,7 +8,7 @@ configure({
 });
 
 const app = new Application();
-const staticBasePath = join(Deno.cwd(), "./path/to/static/files");
+const staticBasePath = join(Deno.cwd(), "./source.jpg");
 
 app.use(async (ctx) => {
   await serveFile(ctx.request, join(staticBasePath, ctx.request.url.pathname));
