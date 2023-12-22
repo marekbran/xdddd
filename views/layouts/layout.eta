@@ -4,10 +4,36 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Image Page</title>
+  <style>
+    /* Default styles for all screens */
+    body {
+      font-size: 16px;
+    }
+
+    /* Media query for screens with a maximum width of 768 pixels (tablets) */
+    @media (max-width: 768px) {
+      body {
+        font-size: 14px;
+      }
+    }
+
+    /* Media query for screens with a maximum width of 480 pixels (mobile devices) */
+    @media (max-width: 480px) {
+      body {
+        font-size: 12px;
+      }
+    }
+
+    /* Responsive image */
+    img {
+      width: 100%;
+      height: auto;
+    }
+  </style>
 </head>
 <body>
   <!-- Replace the URL with the actual URL to your image -->
-  <img src="https://www.meme-arsenal.com/memes/6a57a1ae59a0eda156b29efa9e2bca77.jpg" alt="zzz" style="width: 1400px; height: 800 ;">
+  <img src="https://www.meme-arsenal.com/memes/6a57a1ae59a0eda156b29efa9e2bca77.jpg" alt="zzz">
 
 </body>
 </html>
