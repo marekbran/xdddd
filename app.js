@@ -1,6 +1,6 @@
 import { serve } from "./deps.js";
 import { configure, renderFile } from "./deps.js";
-import { sql } from "./databese/database.js";
+
 
 configure({
   views: `${Deno.cwd()}/views/`,
