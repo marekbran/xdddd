@@ -33,7 +33,7 @@
 </head>
 <body>
   <!-- Replace the URL with the actual URL to your image -->
-  <img src="source.jpg" alt="zzz">
+  <img src="<%= it.imageSrc %>" alt="Description of the image">
 
 </body>
 </html>
