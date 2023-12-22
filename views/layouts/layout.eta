@@ -7,9 +7,11 @@
 </head>
 <body>
   <h1>Image Page</h1>
-  
   <!-- Replace "path/to/your/image.jpg" with the actual path to your image file -->
-  <img src="C:\Users\edek7\OneDrive\Pulpit\zdjęcia\source.jpg" alt="Description of the image">
+  <img src="file:///C:/Users/edek7/OneDrive/Pulpit/z/source.jpg" alt="Description of the image">
+
+
+
 
 </body>
 </html>
