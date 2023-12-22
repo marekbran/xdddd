@@ -1,7 +1,7 @@
 import { Application } from "https://deno.land/x/abc/mod.ts";
 import { configure, renderFile } from "./deps.js";
 import { join } from "https://deno.land/std/path/mod.ts";
-import { sendFile } from "https://deno.land/std/http/file_server.ts";
+import { serveFile } from "https://deno.land/std/http/file_server.ts";
 
 configure({
   views: `${Deno.cwd()}/views/`,
@@ -11,9 +11,7 @@ const app = new Application();
 const staticBasePath = join(Deno.cwd(), "./path/to/static/files");
 
 app.use(async (ctx) => {
-  await sendFile(ctx, ctx.request.url.pathname, {
-    root: staticBasePath,
-  });
+  await serveFile(ctx.request, join(staticBasePath, ctx.request.url.pathname));
 });
 
 const responseDetails = {
@@ -21,7 +19,7 @@ const responseDetails = {
 };
 
 const data_2 = {
-  imageSrc: "./source.jpg", // Use the actual path to your image
+  imageSrc: "/source.jpg", // Use the correct path to your image
 };
 
 const handleRequest = async (request) => {
