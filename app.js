@@ -23,7 +23,6 @@ const handleRequest = async (request) => {
     data.count++;
     return new Response(await renderFile("count.eta", data), responseDetails);
   }
-    return new Response(`Total rows: ${rowCount}`);
 };
 
 serve(handleRequest, { port: 7777 });
