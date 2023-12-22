@@ -6,13 +6,8 @@
   <title>Image Page</title>
 </head>
 <body>
-  <h1>Image Page</h1>
-  <!-- Replace "path/to/your/image.jpg" with the actual path to your image file -->
-  <img src="file:///C:/Users/edek7/OneDrive/Pulpit/z/source.jpg" alt="Description of the image">
-  <img src="https://www.meme-arsenal.com/memes/6a57a1ae59a0eda156b29efa9e2bca77.jpg" alt="zzz">
-
-
-
+  <!-- Replace the URL with the actual URL to your image -->
+  <img src="https://www.meme-arsenal.com/memes/6a57a1ae59a0eda156b29efa9e2bca77.jpg" alt="zzz" style="width: 400px; height: auto;">
 
 </body>
 </html>
